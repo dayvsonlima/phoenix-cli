@@ -24,6 +24,16 @@ module PhoenixCli
       exec("mix phoenix.server")
     end
 
+    desc "deps", "Install dependences"
+    def deps
+      exec("mix deps.get")
+    end
+
+    desc "console", "Run phoenix console"
+    def console
+      exec("iex -S mix")
+    end
+
     desc 'version', 'phoenix-cli version'
     def version
       puts PhoenixCli::VERSION
