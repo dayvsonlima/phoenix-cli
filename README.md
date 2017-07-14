@@ -35,7 +35,7 @@ Change directory to myapp and start the web server:
 
 ```bash
 $ cd myapp
-$ phoenix server`
+$ phoenix server
 ```
 
 Run `phoenix` for more options
