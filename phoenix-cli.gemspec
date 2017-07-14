@@ -6,7 +6,7 @@ Gem::Specification.new do |s|
     s.version = PhoenixCli::VERSION
     s.authors = ["Dayvson Lima"]
     s.email = ["dayvsonlima31@gmail.com"]
-    s.homepage = "http://medium.com/@dayvsonlima/"
+    s.homepage = "https://github.com/dayvsonlima/phoenix-cli"
     s.summary = %q{Phoenix frienfly CLI write in ruby}
     s.description = %q{Phoenix Pretty CLI for using phoenix command line friendly}
     s.licenses = ['MIT']
