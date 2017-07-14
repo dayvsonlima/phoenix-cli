@@ -10,27 +10,35 @@ Use Phoenix Framework with the same friendly rails interface
 
 ## Getting Started
 
-1. Install Phoenix at the command prompt if you haven't yet:
+Install Phoenix at the command prompt if you haven't yet:
 
-  $ phoenix install
+```bash
+$ phoenix install
+```
+
+At the command prompt, create a new Phoenix application:
+
+```bash
+$ phoenix new myapp
+```
+
+where "myapp" is the application name.
 
 
-2. At the command prompt, create a new Phoenix application:
+Install the phoenix dependencies
 
-  $ phoenix new myapp
+```bash
+$ phoenix deps
+```
 
-  where "myapp" is the application name.
+Change directory to myapp and start the web server:
 
-3. Install the phoenix dependencies
+```bash
+$ cd myapp
+$ phoenix server`
+```
 
-  $ phoenix deps
-
-4. Change directory to myapp and start the web server:
-
-  $ cd myapp
-  $ phoenix server
-
-  Run `phoenix` for options
+Run `phoenix` for more options
 
 
 ## Development
