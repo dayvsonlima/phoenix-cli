@@ -1,15 +1,31 @@
-phoenix-cli
+Phoenix-cli
 =================
 
 Phoenix Pretty CLI
+Use Phoenix Framework with the same friendly rails interface
 
 ## Setup
 
 1. Install `gem install phoenix-cli`.
 
-## Usage
+## Getting Started
 
-_Fill in with gem usage information._
+1. Install Phoenix at the command prompt if you haven't yet:
+  $ phoenix install
+
+
+2. At the command prompt, create a new Phoenix application:
+  $ phoenix new myapp
+
+  where "myapp" is the application name.
+
+3. Install the phoenix dependencies
+  $ phoenix deps
+
+4. Change directory to myapp and start the web server:
+  $ cd myapp
+  $ phoenix server
+
 
 ## Development
 
@@ -20,3 +36,7 @@ To test the CLI, run
 
     ruby -Ilib bin/phoenix-cli
 
+
+## License
+
+Phoenix CLI is released under the [MIT License](http://www.opensource.org/licenses/MIT).
