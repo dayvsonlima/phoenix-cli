@@ -34,6 +34,16 @@ module PhoenixCli
       exec("iex -S mix")
     end
 
+    desc "migrate", "Run ecto migrations"
+    def migrate
+      exec("mix ecto.migrate")
+    end
+
+    desc "routes", "Show phoenix routes"
+    def routes
+      exec("mix phoenix.routes")
+    end
+
     desc 'version', 'phoenix-cli version'
     def version
       puts PhoenixCli::VERSION
