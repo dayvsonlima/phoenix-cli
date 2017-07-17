@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    phoenix-cli (0.1.0)
+    phoenix-cli (0.0.2)
       thor (~> 0.19)
 
 GEM
@@ -31,4 +31,4 @@ DEPENDENCIES
   rspec (~> 3)
 
 BUNDLED WITH
-   1.15.0
+   1.15.1

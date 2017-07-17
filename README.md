@@ -4,6 +4,8 @@ Phoenix-cli
 Phoenix Pretty CLI
 Use Phoenix Framework with the same friendly rails interface
 
+![Alt Text](scheenshot.gif)
+
 ## Setup
 
 1. Install `gem install phoenix-cli`.
