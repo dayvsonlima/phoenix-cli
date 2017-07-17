@@ -4,7 +4,7 @@ Phoenix-cli
 Phoenix Pretty CLI
 Use Phoenix Framework with the same friendly rails interface
 
-![Alt Text](scheenshot.gif)
+![Alt Text](screenshot.gif)
 
 ## Setup
 
