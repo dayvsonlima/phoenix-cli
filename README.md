@@ -10,35 +10,18 @@ Use Phoenix Framework with the same friendly rails interface
 
 1. Install `gem install phoenix-cli`.
 
-## Getting Started
+## Commands List
 
-Install Phoenix at the command prompt if you haven't yet:
+| Command | Description |
+| --- | --- |
+| install | Install Phoenix Framework |
+| new APP_PATH | Create new Phoenix application |
+| deps | Install the Phoenix dependencies |
+| server | Start the web server |
+| console | Start Phoenix console |
+| routes | Show Phoenix routes |
+| version | Get current CLI version |
 
-```bash
-$ phoenix install
-```
-
-At the command prompt, create a new Phoenix application:
-
-```bash
-$ phoenix new myapp
-```
-
-where "myapp" is the application name.
-
-
-Install the phoenix dependencies
-
-```bash
-$ phoenix deps
-```
-
-Change directory to myapp and start the web server:
-
-```bash
-$ cd myapp
-$ phoenix server
-```
 
 Run `phoenix` for more options
 
