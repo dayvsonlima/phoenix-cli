@@ -1,4 +1,5 @@
 require 'thor'
+require 'active_support/inflector'
 require 'phoenix-cli'
 
 trap("SIGINT") { exit! }
@@ -37,6 +38,14 @@ module PhoenixCli
     desc "migrate", "Run ecto migrations"
     def migrate
       exec("mix ecto.migrate")
+    end
+
+    desc "generate", "Run generators"
+    def generate(generator, resource_name, *args)
+      if generator == 'scaffold'
+        commands = args.join(' ')
+        exec("mix phoenix.gen.html #{resource_name.camelize} #{resource_name.pluralize} #{commands}")
+      end
     end
 
     desc "routes", "Show phoenix routes"
