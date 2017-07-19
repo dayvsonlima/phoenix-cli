@@ -41,10 +41,28 @@ module PhoenixCli
     end
 
     desc "generate", "Run generators"
-    def generate(generator, resource_name, *args)
-      if generator == 'scaffold'
-        commands = args.join(' ')
-        exec("mix phoenix.gen.html #{resource_name.camelize} #{resource_name.pluralize} #{commands}")
+    def generate(*commands)
+      generator = commands[0]
+      resource = commands[1]
+      attributes = commands[2..(commands.length - 1)]
+
+      resource_camelized = resource.camelize
+      resource_pluralized = resource.pluralize
+
+      if ['scaffold', 'html', 'resource'].include? generator
+        exec("mix phoenix.gen.html #{resource_camelized} #{resource_pluralized} #{attributes.join(' ')}")
+      end
+
+      if ['json', 'api'].include? generator
+        exec("mix phoenix.json #{resource_camelized} #{resource_pluralized} #{attributes.join(' ')}")
+      end
+
+      if ['channel', 'presence', 'secret', 'digest'].include? generator
+        exec("mix phoenix.gen.#{generator} #{attributes.join(' ')}")
+      end
+
+      if ['model'].include? generator
+        exec("mix phoenix.gen.#{generator} #{resource_camelized} #{resource_pluralized} #{attributes.join(' ')}")
       end
     end
 
@@ -57,5 +75,9 @@ module PhoenixCli
     def version
       puts PhoenixCli::VERSION
     end
+  end
+
+  class Generate < Thor
+
   end
 end
