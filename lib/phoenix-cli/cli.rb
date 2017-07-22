@@ -76,8 +76,4 @@ module PhoenixCli
       puts PhoenixCli::VERSION
     end
   end
-
-  class Generate < Thor
-
-  end
 end
