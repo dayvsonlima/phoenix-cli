@@ -1,6 +1,7 @@
 Phoenix-cli
 =================
 [![Gem Version](https://badge.fury.io/rb/phoenix-cli.svg)](https://badge.fury.io/rb/phoenix-cli)
+[![Gem](https://img.shields.io/gem/dt/phoenix-cli.svg)](https://rubygems.org/gems/phoenix-cli)
 
 Phoenix Pretty CLI
 Use Phoenix Framework with the same friendly rails interface
