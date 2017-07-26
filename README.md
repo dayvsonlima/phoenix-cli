@@ -49,6 +49,15 @@ phoenix generate GENERATOR_NAME
 | presence | Generates a Presence tracker for your application | mix phoenix.gen.presence
 | secret | Generates a secret and print it to the terminal | mix phoenix.gen.secret
 
+## Database Commands
+
+| Command | Description | Phoenix equivalent |
+| --- | --- | --- |
+| db:create | Create database | mix ecto.create
+| db:migrate | Run database migrations | mix ecto.migrate
+| db:drop | Drop database | mix deps.drop
+| db:dump | Dumps the current environment’s database | mix ecto.dump
+
 ## Development
 
 When hacking on this gem, the REPL `pry` comes in handy. You can load the
