@@ -58,7 +58,7 @@ module PhoenixCli
       end
 
       if ['json', 'api'].include? generator
-        exec("mix phoenix.json #{resource_camelized} #{resource_pluralized} #{attributes.join(' ')}")
+        exec("mix phoenix.gen.json #{resource_camelized} #{resource_pluralized} #{attributes.join(' ')}")
       end
 
       if ['channel', 'presence', 'secret', 'digest'].include? generator
