@@ -9,6 +9,10 @@ module PhoenixCli
     include Thor::Actions
 
     map %w(-v --version) => :version
+    map %w(db:drop) => :db_drop
+    map %w(db:migrate) => :db_migrate
+    map %w(db:create) => :db_create
+    map %w(db:dump) => :db_dump
 
     desc "install", "Install framework"
     def install
