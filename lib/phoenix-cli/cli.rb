@@ -71,6 +71,26 @@ module PhoenixCli
       exec("mix phoenix.routes")
     end
 
+    desc "db:create", "Create database"
+    def db_create
+      exec("mix ecto.create")
+    end
+
+    desc "db:migrate", "Run database migrations"
+    def db_migrate
+      exec("mix ecto.migrate")
+    end
+
+    desc "db:drop", "Drop database"
+    def db_drop
+      exec("mix ecto.drop")
+    end
+
+    desc "db:dump", "Dumps the current environment’s database"
+    def db_dump
+      exec("mix ecto.dump")
+    end
+
     desc 'version', 'phoenix-cli version'
     def version
       puts PhoenixCli::VERSION
